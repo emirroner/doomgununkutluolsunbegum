@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		html, body {
+			background-color: black;
+		}
+
+		#vid {
+			margin: 0;
+			width: 100%;
+			height: auto;
+		}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EKRANA TIKLA</title>
+</head>
+<body>
+	<video onloadstart="this.volume=1.0" onclick="playVid()" id="vid">Your browser does not support the &lt;video&gt; tag.
+  		<source src="rickroll.mp4"/>
+	</video>
+	<script type="text/javascript">function playVid(){document.getElementById("vid").play();document.title = "RICK ROLLED!";}</script>
+</body>
+</html>
